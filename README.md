@@ -11,7 +11,7 @@
   </a>
 
   <a href="https://coveralls.io/github/column-street/InstaHashtag?branch=master">
-    <img src="https://coveralls.io/repos/github/column-street/InstaHashtag/badge.svg?branch=master">
+    <img src="https://coveralls.io/repos/github/column-street/InstaHashtag/badge.svg?branch=master&service=github">
   </a>
 
   <a href="https://opensource.org/licenses/MIT">
