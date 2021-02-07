@@ -1,0 +1,16 @@
+# Env
+.vscode
+
+# Python
+__pycache__
+*.egg-info
+.eggs
+build
+dist
+
+# Documentation
+docs/build/
+
+# PyTest + Coverage
+.pytest_cache
+.coverage
