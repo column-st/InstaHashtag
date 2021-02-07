@@ -1,5 +1,25 @@
 # 📸 InstaHashtag
 
+<p align="center">
+
+  <a href="https://github.com/column-street/InstaHashtag/actions?query=workflow%3ABuild">
+    <img src="https://github.com/column-street/InstaHashtag/workflows/Build/badge.svg?branch=master">
+  </a>
+
+  <a href="https://column-street.github.io/InstaHashtag/">
+    <img src="https://github.com/column-street/InstaHashtag/workflows/Docs/badge.svg?branch=master">
+  </a>
+
+  <a href="https://coveralls.io/github/column-street/InstaHashtag?branch=master">
+    <img src="https://coveralls.io/repos/github/column-street/InstaHashtag/badge.svg?branch=master">
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  </a>
+</p>
+
+
 Unofficial Python API wrapper for [DisplayPurposes](https://displaypurposes.com/).
 
 ## Installing
@@ -10,7 +30,7 @@ pip install instahashtag
 
 ## Documentation
 
-Documentation for this module can be found [here](https://column-street.github.io/instahashtag/).
+Documentation for this module can be found [here](https://column-street.github.io/InstaHashtag/).
 
 ## Use
 
