@@ -2,16 +2,16 @@
 
 <p align="center">
 
-  <a href="https://github.com/column-street/InstaHashtag/actions?query=workflow%3ABuild">
-    <img src="https://github.com/column-street/InstaHashtag/workflows/Build/badge.svg?branch=master">
+  <a href="https://github.com/column-st/InstaHashtag/actions?query=workflow%3ABuild">
+    <img src="https://github.com/column-st/InstaHashtag/workflows/Build/badge.svg?branch=master">
   </a>
 
-  <a href="https://column-street.github.io/InstaHashtag/">
-    <img src="https://github.com/column-street/InstaHashtag/workflows/Docs/badge.svg?branch=master">
+  <a href="https://column-st.github.io/InstaHashtag/">
+    <img src="https://github.com/column-st/InstaHashtag/workflows/Docs/badge.svg?branch=master">
   </a>
 
-  <a href="https://coveralls.io/github/column-street/InstaHashtag?branch=master">
-    <img src="https://coveralls.io/repos/github/column-street/InstaHashtag/badge.svg?branch=master&service=github">
+  <a href="https://coveralls.io/github/column-st/InstaHashtag?branch=master">
+    <img src="https://coveralls.io/repos/github/column-st/InstaHashtag/badge.svg?branch=master&service=github">
   </a>
 
   <a href="https://opensource.org/licenses/MIT">
@@ -30,7 +30,7 @@ pip install instahashtag
 
 ## Documentation
 
-Documentation for this module can be found [here](https://column-street.github.io/InstaHashtag/).
+Documentation for this module can be found [here](https://column-st.github.io/InstaHashtag/).
 
 ## Use
 
