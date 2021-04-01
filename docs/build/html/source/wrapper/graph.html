@@ -1,0 +1,350 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="maps" href="maps.html" /><link rel="prev" title="tag" href="tag.html" />
+
+    <meta name="generator" content="sphinx-3.4.1, furo 2021.03.20.beta30"/>
+        <title>graph - instahashtag</title>
+      <link rel="stylesheet" href="../../_static/styles/furo.css?digest=978e1795dfe158b585dda6a8417f6411828bf3ed">
+    <link rel="stylesheet" href="../../_static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../../_static/pygments_dark.css">
+    
+
+
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" href="../../_static/styles/furo-extensions.css?digest=d391b54134226e4196576da3bdb6dddb7e05ba2b"></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">instahashtag</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">instahashtag</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html">
+  <input class="sidebar-search" placeholder=Search name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Content</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Packages</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../wrapper.html">wrapper</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tag.html">tag</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maps.html">maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../http.html">http</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="graph">
+<h1>graph<a class="headerlink" href="#graph" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">instahashtag</span> <span class="kn">import</span> <span class="n">Graph</span>
+</pre></div>
+</div>
+<p>Python wrapper for the <cite>Graph</cite> API call.</p>
+<dl class="py class">
+<dt id="Graph">
+<em class="property">class </em><code class="sig-name descname">Graph</code><a class="headerlink" href="#Graph" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py function">
+<dt id="instahashtag.wrapper.Graph.Graph.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">hashtag</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">aio</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#instahashtag.wrapper.Graph.Graph.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes a new Graph object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">instahashtag</span> <span class="kn">import</span> <span class="n">Graph</span>
+
+<span class="n">graph</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="s2">"miami"</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.Graph.Graph.hashtag">
+<code class="sig-name descname">hashtag</code><a class="headerlink" href="#instahashtag.wrapper.Graph.Graph.hashtag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hashtag that was used to retrieve information from.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">graph</span><span class="o">.</span><span class="n">hashtag</span> <span class="c1"># &gt;&gt;&gt; miami</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.Graph.Graph.exists">
+<code class="sig-name descname">exists</code><a class="headerlink" href="#instahashtag.wrapper.Graph.Graph.exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean that dictates whether or not the passed hashtag exists.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">graph</span><span class="o">.</span><span class="n">exists</span> <span class="c1"># &gt;&gt;&gt; True</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.Graph.Graph.root_pos">
+<code class="sig-name descname">root_pos</code><a class="headerlink" href="#instahashtag.wrapper.Graph.Graph.root_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of floats indicating where the root position of the graph is.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">graph</span><span class="o">.</span><span class="n">root_post</span> <span class="c1"># &gt;&gt;&gt; [0.4495344797287565, 0.40752168227901403]</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.Graph.Graph.nodes">
+<code class="sig-name descname">nodes</code><a class="headerlink" href="#instahashtag.wrapper.Graph.Graph.nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of <code class="xref py py-class docutils literal notranslate"><span class="pre">GraphNode</span></code> containing information on related hashtags.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">graph</span><span class="o">.</span><span class="n">nodes</span> <span class="c1"># &gt;&gt;&gt; [Node(id=..., relevance=..., weight=..., x=..., y=...), ...]</span>
+<span class="n">node</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt id="instahashtag.wrapper.graph.Graph.GraphNode">
+<em class="property">class </em><code class="sig-name descname">GraphNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">relevance</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">weight</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">x</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">y</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object that represents the individual edges inside the <code class="docutils literal notranslate"><span class="pre">Graph.nodes</span></code> list.</p>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphNode.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphNode.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hashtag name.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">name</span> <span class="c1"># &gt;&gt;&gt; liv</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphNode.relevance">
+<code class="sig-name descname">relevance</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphNode.relevance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relevance of the node.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">relevance</span> <span class="c1"># &gt;&gt;&gt; 0.5417327185029007</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphNode.weight">
+<code class="sig-name descname">weight</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphNode.weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Weight of the node.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">weight</span> <span class="c1"># &gt;&gt;&gt; 0.4523809523809524</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphNode.x">
+<code class="sig-name descname">x</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphNode.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position of the node in relation to the x-axis.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">x</span> <span class="c1"># &gt;&gt;&gt; 0.20431805750484297</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphNode.y">
+<code class="sig-name descname">y</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphNode.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position of the node in relation to the y-axis.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">y</span> <span class="c1"># &gt;&gt;&gt; 0.6194782200730474</span>
+</pre></div>
+</div>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.Graph.Graph.edges">
+<code class="sig-name descname">edges</code><a class="headerlink" href="#instahashtag.wrapper.Graph.Graph.edges" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of <code class="xref py py-class docutils literal notranslate"><span class="pre">GraphEdge</span></code> containing information on the connection between hashtags.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">graph</span><span class="o">.</span><span class="n">edges</span> <span class="c1"># &gt;&gt;&gt; [Edge(a=..., b=..., id=...#..., weight=...), ...]</span>
+<span class="n">edge</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">edges</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt id="instahashtag.wrapper.graph.Graph.GraphEdge">
+<em class="property">class </em><code class="sig-name descname">GraphEdge</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">b</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">id</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">weight</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object that represents the individual edges inside the <code class="docutils literal notranslate"><span class="pre">Graph.edges</span></code> list.</p>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphEdge.a">
+<code class="sig-name descname">a</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphEdge.a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hashtag name that represents a node in the graph.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">edge</span><span class="o">.</span><span class="n">a</span> <span class="c1"># &gt;&gt;&gt; liv</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphEdge.b">
+<code class="sig-name descname">b</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphEdge.b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hashtag name that represents another node in the graph.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">edge</span><span class="o">.</span><span class="n">a</span> <span class="c1"># &gt;&gt;&gt; thingstodomiami</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphEdge.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphEdge.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Order of the connection between nodes.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">edge</span><span class="o">.</span><span class="n">id</span> <span class="c1"># &gt;&gt;&gt; liv#thingstodomiami</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py attribute">
+<dt id="instahashtag.wrapper.graph.Graph.GraphEdge.weight">
+<code class="sig-name descname">weight</code><a class="headerlink" href="#instahashtag.wrapper.graph.Graph.GraphEdge.weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Weight of the edge.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">edge</span><span class="o">.</span><span class="n">weight</span> <span class="c1"># &gt;&gt;&gt; 0.44775669978922017</span>
+</pre></div>
+</div>
+</dd></dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The edge object of the graph represents <cite>which</cite> node is connected to which other node.</p>
+</div>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<dl class="py function">
+<dt id="instahashtag.wrapper.Graph.Graph.call">
+<em class="property">async </em><code class="sig-name descname">call</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#instahashtag.wrapper.Graph.Graph.call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Asynchronously queries the API.</p>
+<p>See note on the top of the <a class="reference internal" href="../wrapper.html#wrapper"><span class="std std-ref">wrapper</span></a> documentation.</p>
+</dd></dl>
+</dd></dl>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="maps.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">maps</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="tag.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">tag</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2020, Felipe Faria
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            |
+            <a class="muted-link" href="../../_sources/source/wrapper/graph.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </main>
+</div>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/main.js?digest=e931d09b2a40c1bb82b542effe772014573baf67"></script></body>
+</html>

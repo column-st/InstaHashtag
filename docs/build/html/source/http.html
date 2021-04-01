@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="api" href="api.html" />
+
+    <meta name="generator" content="sphinx-3.4.1, furo 2021.03.20.beta30"/>
+        <title>http - instahashtag</title>
+      <link rel="stylesheet" href="../_static/styles/furo.css?digest=978e1795dfe158b585dda6a8417f6411828bf3ed">
+    <link rel="stylesheet" href="../_static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css">
+    
+
+
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" href="../_static/styles/furo-extensions.css?digest=d391b54134226e4196576da3bdb6dddb7e05ba2b"></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">instahashtag</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  <span class="sidebar-brand-text">instahashtag</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html">
+  <input class="sidebar-search" placeholder=Search name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Content</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Packages</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="wrapper.html">wrapper</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="wrapper/tag.html">tag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wrapper/graph.html">graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wrapper/maps.html">maps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">api</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">http</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="http">
+<h1>http<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">instahashtag.http</span> <span class="kn">import</span> <span class="n">Base</span><span class="p">,</span> <span class="n">Requests</span><span class="p">,</span> <span class="n">Aiohttp</span>
+</pre></div>
+</div>
+<p>Low-level HTTP calls to DisplayPurposes with <code class="docutils literal notranslate"><span class="pre">json</span></code> returns. Allows customization with
+“plug-and-play” support for any other Python HTTP request library. Comes out of the box
+with support for both the  <code class="docutils literal notranslate"><span class="pre">requests</span></code> and <code class="docutils literal notranslate"><span class="pre">aiohttp</span></code> packages.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The classes documented here are not intended to be used for querying the API- they are here
+to allow customization support for anyone looking to use their own HTTP request library to
+send requests to the API.</p>
+<p>If you are looking for retrieving back the raw <code class="docutils literal notranslate"><span class="pre">json</span></code> objects without carying much about
+implementation, check out the documentations for the <a class="reference internal" href="api.html#api"><span class="std std-ref">api</span></a> module.</p>
+</div>
+<hr class="docutils"/>
+<dl class="py class">
+<dt id="instahashtag.http.endpoints">
+<em class="property">class </em><code class="sig-name descname">endpoints</code><a class="reference internal" href="../_modules/instahashtag/http.html#endpoints"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.endpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>API endpoints.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">endpoints</span><span class="p">:</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="s2">"https://apidisplaypurposes.com/tag/</span><span class="si">{}</span><span class="s2">"</span>
+    <span class="n">graph</span> <span class="o">=</span> <span class="s2">"https://apidisplaypurposes.com/graph/</span><span class="si">{}</span><span class="s2">"</span>
+    <span class="n">maps</span> <span class="o">=</span> <span class="s2">"https://apidisplaypurposes.com/local/?bbox=</span><span class="si">{}</span><span class="s2">,</span><span class="si">{}</span><span class="s2">,</span><span class="si">{}</span><span class="s2">,</span><span class="si">{}</span><span class="s2">&amp;zoom=</span><span class="si">{}</span><span class="s2">"</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py class">
+<dt id="instahashtag.http.Base">
+<em class="property">class </em><code class="sig-name descname">Base</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">endpoint</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">headers</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/instahashtag/http.html#Base"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class that properly processes and calls the API.</p>
+<p>Allows one to “plug-and-play” with other request libraries with ease. If one wants to,
+they may inherit from this class and overwrite the abstract <a class="reference internal" href="#instahashtag.http.Base.call" title="instahashtag.http.Base.call"><code class="xref py py-func docutils literal notranslate"><span class="pre">call()</span></code></a> method.</p>
+<dl>
+<dt>Example</dt><dd><p>While the module <code class="docutils literal notranslate"><span class="pre">httpx</span></code> is not supported out of the box, one may inherit from the
+<a class="reference internal" href="#instahashtag.http.Base" title="instahashtag.http.Base"><code class="xref py py-class docutils literal notranslate"><span class="pre">Base</span></code></a> class and utilize it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">instahashtag.http</span> <span class="kn">import</span> <span class="n">Base</span>
+<span class="kn">import</span> <span class="nn">httpx</span>
+
+<span class="k">class</span> <span class="nc">httpx_io</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">req</span> <span class="o">=</span> <span class="n">httpx</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">text</span>
+
+        <span class="c1"># Note that self.process is just a simple wrapper for 'json.loads'.</span>
+        <span class="c1"># One has the option to also overwrite this to catch any extra error(s),</span>
+        <span class="c1"># or run processes on the data.</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">resp</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">httpx_aio</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">async</span> <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">AsyncClient</span><span class="p">()</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+            <span class="n">req</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
+
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">text</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">resp</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">io</span><span class="p">():</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">httpx_io</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="n">hashtag</span><span class="o">=</span><span class="s2">"instagram"</span><span class="p">)</span>
+    <span class="n">graph</span> <span class="o">=</span> <span class="n">httpx_io</span><span class="o">.</span><span class="n">graph</span><span class="p">(</span><span class="n">hashtag</span><span class="o">=</span><span class="s2">"instagram"</span><span class="p">)</span>
+    <span class="n">maps</span> <span class="o">=</span> <span class="n">httpx_io</span><span class="o">.</span><span class="n">maps</span><span class="p">(</span>
+        <span class="n">x1</span><span class="o">=-</span><span class="mf">80.48712034709753</span><span class="p">,</span>
+        <span class="n">y1</span><span class="o">=</span><span class="mf">25.750749758162012</span><span class="p">,</span>
+        <span class="n">x2</span><span class="o">=-</span><span class="mf">79.82794065959753</span><span class="p">,</span>
+        <span class="n">y2</span><span class="o">=</span><span class="mf">25.854604964203453</span><span class="p">,</span>
+        <span class="n">zoom</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">aio</span><span class="p">():</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="k">await</span> <span class="n">httpx_io</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="n">hashtag</span><span class="o">=</span><span class="s2">"instagram"</span><span class="p">)</span>
+    <span class="n">graph</span> <span class="o">=</span> <span class="k">await</span> <span class="n">httpx_io</span><span class="o">.</span><span class="n">graph</span><span class="p">(</span><span class="n">hashtag</span><span class="o">=</span><span class="s2">"instagram"</span><span class="p">)</span>
+    <span class="n">maps</span> <span class="o">=</span> <span class="k">await</span> <span class="n">httpx_io</span><span class="o">.</span><span class="n">maps</span><span class="p">(</span>
+        <span class="n">x1</span><span class="o">=-</span><span class="mf">80.48712034709753</span><span class="p">,</span>
+        <span class="n">y1</span><span class="o">=</span><span class="mf">25.750749758162012</span><span class="p">,</span>
+        <span class="n">x2</span><span class="o">=-</span><span class="mf">79.82794065959753</span><span class="p">,</span>
+        <span class="n">y2</span><span class="o">=</span><span class="mf">25.854604964203453</span><span class="p">,</span>
+        <span class="n">zoom</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="instahashtag.http.Base.call">
+<em class="property">abstract </em><code class="sig-name descname">call</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → NotImplemented<a class="reference internal" href="../_modules/instahashtag/http.html#Base.call"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Base.call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract method that needs to be written to query the API endpoint.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="instahashtag.http.Base.process">
+<em class="property">static </em><code class="sig-name descname">process</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">resp</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> → dict<a class="reference internal" href="../_modules/instahashtag/http.html#Base.process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Base.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes the reply returned back by <a class="reference internal" href="#instahashtag.http.Base.tag" title="instahashtag.http.Base.tag"><code class="xref py py-data docutils literal notranslate"><span class="pre">tag</span></code></a>, <a class="reference internal" href="#instahashtag.http.Base.graph" title="instahashtag.http.Base.graph"><code class="xref py py-data docutils literal notranslate"><span class="pre">graph</span></code></a>, and <a class="reference internal" href="#instahashtag.http.Base.maps" title="instahashtag.http.Base.maps"><code class="xref py py-data docutils literal notranslate"><span class="pre">maps</span></code></a>.</p>
+<p>The current implementation of this function is a simple <code class="docutils literal notranslate"><span class="pre">json.loads(resp)</span></code>, returning
+back a Python dictionary object. However, one may chose to overwrite this function to
+process the data in some more meaningful way.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="instahashtag.http.Base.tag">
+<em class="property">classmethod </em><code class="sig-name descname">tag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hashtag</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> → Any<a class="reference internal" href="../_modules/instahashtag/http.html#Base.tag"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Base.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends an API request to the <code class="docutils literal notranslate"><span class="pre">tag</span></code> endpoint.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="instahashtag.http.Base.graph">
+<em class="property">classmethod </em><code class="sig-name descname">graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hashtag</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> → Any<a class="reference internal" href="../_modules/instahashtag/http.html#Base.graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Base.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends an API request to the <code class="docutils literal notranslate"><span class="pre">graph</span></code> endpoint.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="instahashtag.http.Base.maps">
+<em class="property">classmethod </em><code class="sig-name descname">maps</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x1</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">y1</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">x2</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">y2</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">zoom</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> → Any<a class="reference internal" href="../_modules/instahashtag/http.html#Base.maps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Base.maps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends an API request to the <code class="docutils literal notranslate"><span class="pre">maps</span></code> endpoint.</p>
+</dd></dl>
+</dd></dl>
+<hr class="docutils"/>
+<p>The classes below are the out-of-the-box implementations used by the higher layers.</p>
+<dl class="py class">
+<dt id="instahashtag.http.Requests">
+<em class="property">class </em><code class="sig-name descname">Requests</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">endpoint</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">headers</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/instahashtag/http.html#Requests"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that utilitizes the <code class="docutils literal notranslate"><span class="pre">request</span></code> module to make API request.</p>
+</dd></dl>
+<dl class="py class">
+<dt id="instahashtag.http.Aiohttp">
+<em class="property">class </em><code class="sig-name descname">Aiohttp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">endpoint</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">headers</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/instahashtag/http.html#Aiohttp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#instahashtag.http.Aiohttp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that utilitizes the <code class="docutils literal notranslate"><span class="pre">aiohttp</span></code> module to make API request.</p>
+</dd></dl>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          
+          <a class="prev-page" href="api.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">api</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2020, Felipe Faria
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            |
+            <a class="muted-link" href="../_sources/source/http.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </main>
+</div>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/main.js?digest=e931d09b2a40c1bb82b542effe772014573baf67"></script></body>
+</html>
